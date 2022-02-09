@@ -4,13 +4,12 @@ import Card from "../components/Card";
 import CardTitle from "../components/CardTitle";
 import CardSubtitle from "../components/CardSubtitle";
 import PageTitle from "../components/PageTitle";
-import BackgroundHearts from "../components/BackgroundHearts";
 
 export default function Home() {
   return (
     <>
       <PageTitle />
-      <Title>★Se passou 1 ano★</Title>
+      <Title home>★Se passou 1 ano★</Title>
       <CardGroup>
         <Card color="red" href="./dates/test">
           <CardTitle>04/01/20</CardTitle>

@@ -7,6 +7,9 @@ export const AudioContainerWrapper = styled.div`
   border-radius: 2.3rem;
   text-align: center;
 
+  audio {
+    width: 500px;
+  }
   audio::-webkit-media-controls-enclosure {
     background-color: ${(props) => props.theme.colors.yellow};
   }
@@ -26,6 +29,7 @@ export const AudioContainerWrapper = styled.div`
   audio::-webkit-media-controls-time-remaining-display {
     color: ${(props) => props.theme.colors.darkGray};
     font-family: "Poppins", sans-serif;
+    font-size: 20px;
   }
 `;
 

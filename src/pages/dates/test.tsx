@@ -8,7 +8,9 @@ export default function Home() {
   return (
     <>
       <PageTitle />
-      <Title>★04/01/20★</Title>
+      <Title src="/home.png" href="/">
+        ★04/01/20★
+      </Title>
       <TextBox>
         <P>Primeiro encontro</P>
         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus autem

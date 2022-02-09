@@ -1,14 +1,34 @@
 import * as S from "./styles";
 
-type TitleWrapperProps = {
-  children: React.ReactNode;
+export type SectionWrapperProps = {
+  children?: React.ReactNode;
+  home?: boolean;
+  src?: string;
+  href?: string;
 };
 
-const Title = ({ children }: TitleWrapperProps) => {
+const Title: React.FC<SectionWrapperProps> = ({
+  children,
+  home = false,
+  src,
+  href,
+}: SectionWrapperProps) => {
   return (
-    <S.SectionWrapper>
-      <S.TitleWrapper>{children}</S.TitleWrapper>
-    </S.SectionWrapper>
+    <>
+      {!!home && (
+        <S.SectionWrapper home={home}>
+          <S.TitleWrapper>{children}</S.TitleWrapper>
+        </S.SectionWrapper>
+      )}
+      {!home && (
+        <S.SectionWrapper home={home}>
+          <S.HomeLinkWrapper href={href}>
+            <S.ImageWrapper src={src} />
+          </S.HomeLinkWrapper>
+          <S.TitleWrapper>{children}</S.TitleWrapper>
+        </S.SectionWrapper>
+      )}
+    </>
   );
 };
 
