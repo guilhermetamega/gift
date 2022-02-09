@@ -11,7 +11,13 @@ body::-webkit-scrollbar {
 }
 
 body {
-  background:${(props) => props.theme.colors.darkGray};
+  background: url("/bg.png") no-repeat center center fixed;
+  box-shadow: inset 0 0 0 70vw ${(props) => props.theme.colors.darkGrayCover};
+  background-size: cover;
+  position: fixed;
+  min-width: 100%;
+  min-height: 100%;
+
   font-family: "Poppins", sans-serif;
 }
 `;

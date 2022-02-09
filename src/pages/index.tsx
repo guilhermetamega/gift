@@ -4,6 +4,7 @@ import Card from "../components/Card";
 import CardTitle from "../components/CardTitle";
 import CardSubtitle from "../components/CardSubtitle";
 import PageTitle from "../components/PageTitle";
+import BackgroundHearts from "../components/BackgroundHearts";
 
 export default function Home() {
   return (
