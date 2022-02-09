@@ -7,7 +7,7 @@ export type AudioPlayerProps = {
 const AudioPlayer = ({ src }: AudioPlayerProps) => {
   return (
     <S.AudioContainerWrapper>
-      <S.AudioWrapper src={src} controls />
+      <S.AudioWrapper src={src} controls controlsList="nodownload" />
     </S.AudioContainerWrapper>
   );
 };

@@ -38,7 +38,7 @@ export default class MyDocument extends Document {
   }
   render(): JSX.Element {
     return (
-      <Html lang="pt">
+      <Html lang="pt-br">
         <Head>
           <meta name="description" content="Já temos 1 ano de namoro..." />
           <link rel="icon" href="/heart.svg" />
@@ -53,6 +53,7 @@ export default class MyDocument extends Document {
           <Main />
           <NextScript />
         </body>
+        <footer> @thepatonerd1</footer>
       </Html>
     );
   }
