@@ -20,20 +20,21 @@ const wrapperModifiers = {
   `,
 };
 
-export const CardWrapper = styled.div<WrapperProps>`
+export const CardWrapper = styled.a<WrapperProps>`
   ${({ color }) => css`
     ${!!color && wrapperModifiers[color]()}
   `}
   text-decoration: none;
   list-style: none;
-  padding: 20px;
+  padding: 25px;
   color: #222;
   text-align: center;
-  border-radius: 5rem;
+  border-radius: 3rem;
   position: relative;
   box-shadow: 0px 0px 20px black;
 
   :hover {
+    cursor: pointer;
     animation: bounce 0.5s linear;
     box-shadow: 1px 1px #53a7ea, 1px 1px #53a7ea, 1px 1px #53a7ea;
     -webkit-transform: translateX(-3px);
