@@ -7,7 +7,7 @@ const theme: DefaultTheme = {
     red: "#ef476f",
     green: "#06d6a0",
     darkGray: "#181818",
-    darkGrayCover: "rgba(24,24,24,0.85)",
+    white: "#FFFFFF",
   },
   paddingSize: "40px",
 };

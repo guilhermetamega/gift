@@ -9,7 +9,7 @@ export default function Home() {
   return (
     <>
       <PageTitle />
-      <Title home>★Se passou 1 ano★</Title>
+      <Title home>★Feliz 1 ano★</Title>
       <CardGroup>
         <Card color="red" href="./dates/test">
           <CardTitle>04/01/20</CardTitle>

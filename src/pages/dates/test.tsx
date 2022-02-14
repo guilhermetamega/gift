@@ -3,6 +3,7 @@ import PageTitle from "../../components/PageTitle";
 import TextBox from "../../components/TextBox";
 import P from "../../components/Paragraph";
 import AudioPlayer from "../../components/AudioPlayer";
+import Quizz from "../../components/Quizz";
 
 export default function Home() {
   return (
@@ -17,7 +18,13 @@ export default function Home() {
         optio dicta, libero aliquid laboriosam corporis, minus provident quam
         quisquam eaque excepturi, sint voluptatem iusto ad quis quasi at ex!
       </TextBox>
-      <AudioPlayer src="/audioOgg.ogg" />
+      <AudioPlayer src="/audios/audioOgg.ogg" />
+      <Quizz
+        question="What's the formal form?"
+        answer_1="Hi"
+        answer_2="Hello"
+        answer_3="Hey"
+      />
     </>
   );
 }

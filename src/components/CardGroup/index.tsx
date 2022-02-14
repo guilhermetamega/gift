@@ -1,7 +1,7 @@
 import * as S from "./styles";
 
 type CardGroupWrapperProps = {
-  children: React.ReactNode;
+  children?: React.ReactNode;
 };
 
 const CardGroup = ({ children }: CardGroupWrapperProps) => {
