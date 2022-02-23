@@ -30,24 +30,6 @@ const PageTemplate = ({ page }: PageTemplateProps) => {
   const body = page.body.html;
   return (
     <>
-      <NextSeo
-        title={`${page.title} - 1 ano`}
-        description={"Site about my history with my girlfriend."}
-        canonical="https://oneyearwithyou.vercel.app/"
-        openGraph={{
-          url: "https://oneyearwithyou.vercel.app/",
-          title: `${page.title} - 1 ano`,
-          description: "Site about my history with my girlfriend.",
-          images: [
-            {
-              url: page.gallery[0].url,
-              width: page.gallery[0].width,
-              height: page.gallery[0].height,
-              alt: `${page.title}`,
-            },
-          ],
-        }}
-      />
       <PageTitle />
       <Title src="/home.png" href="/">
         ★{page.title}★
