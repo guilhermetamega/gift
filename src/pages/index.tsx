@@ -1,18 +1,49 @@
-import client from "../graphql/client";
-import { GetPagesQuery } from "../graphql/generated/graphql";
-import { GET_PAGES } from "../graphql/queries";
-import HomeTemplate from "../templates/Home";
+import Title from "../components/Title";
+import CardGroup from "../components/CardGroup";
+import Card from "../components/Card";
+import CardTitle from "../components/CardTitle";
+import CardSubtitle from "../components/CardSubtitle";
+import PageTitle from "../components/PageTitle";
 
 export default function Home() {
-  return <HomeTemplate />;
+  return (
+    <>
+      <PageTitle />
+      <Title home>★Feliz 1 ano★</Title>
+      <CardGroup>
+        <Card color="red" href="./teste">
+          <CardTitle>04/01/20</CardTitle>
+          <CardSubtitle>Primeira vez que nos vimos</CardSubtitle>
+        </Card>
+        <Card color="blue">
+          <CardTitle>23/01/21</CardTitle>
+          <CardSubtitle>Primeiro flerte</CardSubtitle>
+        </Card>
+        <Card color="yellow">
+          <CardTitle>28/01/21</CardTitle>
+          <CardSubtitle>Copo da Fênix Negra</CardSubtitle>
+        </Card>
+        <Card color="green">
+          <CardTitle>04/01/21</CardTitle>
+          <CardSubtitle>Primeira vez que nos vimos</CardSubtitle>
+        </Card>
+        <Card color="red">
+          <CardTitle>04/01/20</CardTitle>
+          <CardSubtitle>Primeira vez que nos vimos</CardSubtitle>
+        </Card>
+        <Card color="blue">
+          <CardTitle>23/01/21</CardTitle>
+          <CardSubtitle>Primeiro flerte</CardSubtitle>
+        </Card>
+        <Card color="yellow">
+          <CardTitle>28/01/21</CardTitle>
+          <CardSubtitle>Copo da Fênix Negra</CardSubtitle>
+        </Card>
+        <Card color="green">
+          <CardTitle>04/01/21</CardTitle>
+          <CardSubtitle>Primeira vez que nos vimos</CardSubtitle>
+        </Card>
+      </CardGroup>
+    </>
+  );
 }
-
-export const getStaticProps = async () => {
-  const { pages } = await client.request<GetPagesQuery>(GET_PAGES);
-  return {
-    revalidate: 5,
-    props: {
-      pages,
-    },
-  };
-};
