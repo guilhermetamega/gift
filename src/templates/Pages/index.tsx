@@ -2,11 +2,11 @@ import Title from "../../components/Title";
 import PageTitle from "../../components/PageTitle";
 import TextBox from "../../components/TextBox";
 import P from "../../components/Paragraph";
-import AudioPlayer from "../../components/AudioPlayer";
 
 import Image from "next/image";
 
 import * as S from "./styles";
+import { NextSeo } from "next-seo";
 
 type ImageProps = {
   url: string;
@@ -23,6 +23,24 @@ export type PageTemplateProps = {
 
 const PageTemplate = ({ heading, body, title, gallery }: PageTemplateProps) => (
   <>
+    <NextSeo
+      title={`${title} - 1 ano`}
+      description={"Site about my history with my girlfriend."}
+      canonical="https://oneyearwithyou.vercel.app/"
+      openGraph={{
+        url: "https://oneyearwithyou.vercel.app/",
+        title: `${title} - 1 ano`,
+        description: "Site about my history with my girlfriend.",
+        images: [
+          {
+            url: gallery[0].url,
+            width: gallery[0].width,
+            height: gallery[0].height,
+            alt: `${title}`,
+          },
+        ],
+      }}
+    />
     <PageTitle />
     <Title src="/home.png" href="/">
       ★{title}★
@@ -41,10 +59,10 @@ const PageTemplate = ({ heading, body, title, gallery }: PageTemplateProps) => (
           height={image.height}
           quality={100}
           layout="responsive"
+          priority
         />
       ))}
     </S.Gallery>
-    <AudioPlayer src="/audios/audioOgg.ogg" />
   </>
 );
 
