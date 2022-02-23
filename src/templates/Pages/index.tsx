@@ -41,6 +41,7 @@ const PageTemplate = ({ heading, body, title, gallery }: PageTemplateProps) => (
           height={image.height}
           quality={100}
           layout="responsive"
+          priority
         />
       ))}
     </S.Gallery>
