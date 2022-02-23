@@ -44,6 +44,7 @@ const PageTemplate = ({ heading, body, title, gallery }: PageTemplateProps) => (
         />
       ))}
     </S.Gallery>
+    <AudioPlayer src="/audios/audioOgg.ogg" />
   </>
 );
 
