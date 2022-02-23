@@ -8,24 +8,12 @@ import { GetStaticProps } from "next";
 import { useRouter } from "next/router";
 import PageTemplate, { PageTemplateProps } from "../templates/Pages";
 
-export default function Page({
-  heading,
-  title,
-  body,
-  gallery,
-}: PageTemplateProps) {
+export default function Page({ page }: PageTemplateProps) {
   const router = useRouter();
 
   if (router.isFallback) return null;
 
-  return (
-    <PageTemplate
-      heading={heading}
-      title={title}
-      body={body}
-      gallery={gallery}
-    />
-  );
+  return <PageTemplate page={page} />;
 }
 
 export async function getStaticPaths() {
@@ -46,11 +34,7 @@ export const getStaticProps: GetStaticProps = async ({ params }) => {
   if (!page) return { notFound: true };
 
   return {
-    props: {
-      heading: page.heading,
-      body: page.body.html,
-      title: page.title,
-      gallery: page.gallery,
-    },
+    revalidate: 5,
+    props: { page },
   };
 };
