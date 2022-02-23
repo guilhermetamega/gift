@@ -11,7 +11,7 @@ export default function Home() {
       <PageTitle />
       <Title home>★Feliz 1 ano★</Title>
       <CardGroup>
-        <Card color="red" href="./dates/test">
+        <Card color="red" href="./teste">
           <CardTitle>04/01/20</CardTitle>
           <CardSubtitle>Primeira vez que nos vimos</CardSubtitle>
         </Card>
