@@ -2,8 +2,8 @@ import styled from "styled-components";
 
 export const Gallery = styled.div`
   display: grid;
-  grid-gap: var(--medium);
-  margin-top: var(--medium);
+  grid-gap: 25px;
+  margin: 25px;
 
   img {
     background: #f6f7f8;

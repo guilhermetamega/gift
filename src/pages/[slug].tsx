@@ -10,8 +10,8 @@ import PageTemplate, { PageTemplateProps } from "../templates/Pages";
 
 export default function Page({
   heading,
-  body,
   title,
+  body,
   gallery,
 }: PageTemplateProps) {
   const router = useRouter();
@@ -21,8 +21,8 @@ export default function Page({
   return (
     <PageTemplate
       heading={heading}
-      body={body}
       title={title}
+      body={body}
       gallery={gallery}
     />
   );
@@ -46,6 +46,11 @@ export const getStaticProps: GetStaticProps = async ({ params }) => {
   if (!page) return { notFound: true };
 
   return {
-    props: { heading: page.heading, body: page.body.html, title: page.title },
+    props: {
+      heading: page.heading,
+      body: page.body.html,
+      title: page.title,
+      gallery: page.gallery,
+    },
   };
 };
