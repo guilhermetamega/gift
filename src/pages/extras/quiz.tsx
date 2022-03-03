@@ -14,7 +14,7 @@ export default function Quiz() {
       </Title>
       <Quizz
         title="What's the formal form?"
-        answer_1="Hi"
+        answer_1="Hii"
         answer_2="Hello"
         answer_3="Hey"
         correct={1}
