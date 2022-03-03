@@ -2,14 +2,14 @@ import * as S from "./styles";
 
 export type ButtonProps = {
   color?: "default" | "correct" | "wrong";
-  text?: string;
+  answer?: string;
   onClick?: any;
 };
 
-const Button = ({ color = "default", text, onClick }: ButtonProps) => {
+const Button = ({ color = "default", answer, onClick }: ButtonProps) => {
   return (
     <S.ButtonWrapper color={color} onClick={onClick}>
-      {text}
+      {answer}
     </S.ButtonWrapper>
   );
 };

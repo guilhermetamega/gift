@@ -1,29 +1,29 @@
 import Title from "../../components/Title";
 import PageTitle from "../../components/PageTitle";
-import TextBox from "../../components/TextBox";
-import P from "../../components/Paragraph";
 import Quizz from "../../components/QuizzBar";
 
-export default function quiz() {
+import { faQuestionCircle } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+
+export default function Quiz() {
   return (
     <>
       <PageTitle />
       <Title src="/home.png" href="/">
-        ★04/01/20★
+        <FontAwesomeIcon icon={faQuestionCircle} />
       </Title>
-      text
       <Quizz
-        question="What's the formal form?"
-        text_1="Hi"
-        text_2="Hello"
-        text_3="Hey"
+        title="What's the formal form?"
+        answer_1="Hi"
+        answer_2="Hello"
+        answer_3="Hey"
         correct={1}
       />
       <Quizz
-        question="Oie"
-        text_1="Hi"
-        text_2="Hello"
-        text_3="Hey"
+        title="Oie"
+        answer_1="Hi"
+        answer_2="Hello"
+        answer_3="Hey"
         correct={2}
       />
     </>

@@ -3,45 +3,44 @@ import Button from "../Button";
 import * as S from "./styles";
 
 export type QuizzProps = {
-  // children?: React.ReactNode;
-  question?: string;
-  text_1?: string;
-  text_2?: string;
-  text_3?: string;
+  title?: string;
+  answer_1?: string;
+  answer_2?: string;
+  answer_3?: string;
   correct?: number;
 };
 
 const QuizzBar = ({
-  question,
-  text_1,
-  text_2,
-  text_3,
+  title,
+  answer_1,
+  answer_2,
+  answer_3,
   correct,
 }: QuizzProps) => {
   const [response, setResponse] = useState(0);
   return (
     <S.QuizzBackgroundWrapper>
-      <S.QuizzTitleWrapper>{question}</S.QuizzTitleWrapper>
+      <S.QuizzTitleWrapper>{title}</S.QuizzTitleWrapper>
       <S.ButtonGroupWrapper>
         <Button
           color={
             response === 0 ? "default" : response === 1 ? "correct" : "wrong"
           }
-          text={text_1}
+          answer={answer_1}
           onClick={() => setResponse(correct)}
         />
         <Button
           color={
             response === 0 ? "default" : response === 2 ? "correct" : "wrong"
           }
-          text={text_2}
+          answer={answer_2}
           onClick={() => setResponse(correct)}
         />
         <Button
           color={
             response === 0 ? "default" : response === 3 ? "correct" : "wrong"
           }
-          text={text_3}
+          answer={answer_3}
           onClick={() => setResponse(correct)}
         />
       </S.ButtonGroupWrapper>
