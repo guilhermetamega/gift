@@ -57,7 +57,7 @@ export default class MyDocument extends Document {
           <Main />
           <NextScript />
         </body>
-        <footer> @thepatonerd1</footer>
+        <footer>@thepatonerd1</footer>
       </Html>
     );
   }

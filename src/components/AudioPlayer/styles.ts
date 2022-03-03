@@ -1,38 +1,39 @@
 import styled from "styled-components";
+import theme from "styles/theme";
 
 export const AudioContainerWrapper = styled.div`
-  background-color: ${(props) => props.theme.colors.yellow};
+  background-color: ${theme.colors.yellow};
   padding: 10px;
-  margin: 30px;
+  margin: 10px 50px;
   border-radius: 2.3rem;
   text-align: center;
 
   audio {
-    width: 500px;
+    width: 300px;
   }
   audio::-webkit-media-controls-enclosure {
-    background-color: ${(props) => props.theme.colors.yellow};
+    background-color: ${theme.colors.yellow};
   }
   audio::-webkit-media-controls-mute-button,
   audio::-webkit-media-controls-play-button {
     border-radius: 1rem;
-    background-color: ${(props) => props.theme.colors.green};
+    background-color: ${theme.colors.green};
   }
 
   audio::-webkit-media-controls-mute-button:hover,
   audio::-webkit-media-controls-play-button:hover {
     border-radius: 1rem;
-    background-color: ${(props) => props.theme.colors.red};
+    background-color: ${theme.colors.red};
   }
 
   audio::-webkit-media-controls-current-time-display,
   audio::-webkit-media-controls-time-remaining-display {
-    color: ${(props) => props.theme.colors.darkGray};
+    color: ${theme.colors.darkGray};
     font-family: "Poppins", sans-serif;
     font-size: 20px;
   }
 `;
 
 export const AudioWrapper = styled.audio`
-  background-color: ${(props) => props.theme.colors.yellow};
+  background-color: ${theme.colors.yellow};
 `;

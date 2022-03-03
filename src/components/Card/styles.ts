@@ -24,6 +24,7 @@ export const CardWrapper = styled.a<WrapperProps>`
   ${({ color }) => css`
     ${!!color && wrapperModifiers[color]()}
   `}
+
   text-decoration: none;
   list-style: none;
   padding: 25px;
@@ -32,6 +33,7 @@ export const CardWrapper = styled.a<WrapperProps>`
   border-radius: 3rem;
   position: relative;
   box-shadow: 0px 0px 20px black;
+  user-select: none;
 
   :hover {
     cursor: pointer;

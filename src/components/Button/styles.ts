@@ -1,23 +1,24 @@
 import styled, { css } from "styled-components";
 import { ButtonProps } from ".";
+import theme from "styles/theme";
 
 export type WrapperProps = Pick<ButtonProps, "color">;
 
 const wrapperModifiers = {
   default: () =>
     css`
-      background-color: ${(props) => props.theme.colors.white};
-      color: ${(props) => props.theme.colors.darkGray};
+      background-color: ${theme.colors.white};
+      color: ${theme.colors.darkGray};
     `,
   correct: () =>
     css`
-      background-color: ${(props) => props.theme.colors.green};
-      color: ${(props) => props.theme.colors.white};
+      background-color: ${theme.colors.green};
+      color: ${theme.colors.white};
     `,
   wrong: () =>
     css`
-      background-color: ${(props) => props.theme.colors.red};
-      color: ${(props) => props.theme.colors.white};
+      background-color: ${theme.colors.red};
+      color: ${theme.colors.white};
     `,
 };
 
@@ -36,7 +37,7 @@ export const ButtonWrapper = styled.button<WrapperProps>`
 
   border-radius: 1.5rem;
   border-style: solid;
-  border-color: ${(props) => props.theme.colors.darkGray};
+  border-color: ${theme.colors.darkGray};
   border-width: 3px;
   :hover {
     cursor: pointer;

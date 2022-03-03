@@ -6,7 +6,6 @@ import P from "../../components/Paragraph";
 import Image from "next/image";
 
 import * as S from "./styles";
-import { NextSeo } from "next-seo";
 
 type ImageProps = {
   url: string;

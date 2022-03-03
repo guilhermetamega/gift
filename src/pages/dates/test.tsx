@@ -3,7 +3,7 @@ import PageTitle from "../../components/PageTitle";
 import TextBox from "../../components/TextBox";
 import P from "../../components/Paragraph";
 import AudioPlayer from "../../components/AudioPlayer";
-import Quizz from "../../components/Quizz";
+import Quizz from "../../components/QuizzBar";
 
 export default function Home() {
   return (
