@@ -9,13 +9,18 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faQuestionCircle,
   faFileAudio,
+  faStar,
 } from "@fortawesome/free-solid-svg-icons";
 
 export default function HomeTemplate() {
   return (
     <>
       <PageTitle />
-      <Title home>★Feliz 1 ano★</Title>
+      <Title home>
+        <FontAwesomeIcon icon={faStar} />
+        Feliz 1 ano
+        <FontAwesomeIcon icon={faStar} />
+      </Title>
       <CardGroup>
         <Card color="red" href="/teste">
           <CardTitle>04/01/20</CardTitle>
@@ -54,7 +59,7 @@ export default function HomeTemplate() {
       <CardGroup>
         <Card color="green" href="/extras/quiz">
           <CardTitle>
-            <FontAwesomeIcon icon={faQuestionCircle} /> Quizz{" "}
+            <FontAwesomeIcon icon={faQuestionCircle} /> Quiz{" "}
             <FontAwesomeIcon icon={faQuestionCircle} />
           </CardTitle>
           <CardSubtitle>
@@ -66,7 +71,7 @@ export default function HomeTemplate() {
       <CardGroup>
         <Card color="blue" href="/extras/audios">
           <CardTitle>
-            <FontAwesomeIcon icon={faFileAudio} /> Audios Perdidos{" "}
+            <FontAwesomeIcon icon={faFileAudio} /> Áudios Perdidos{" "}
             <FontAwesomeIcon icon={faFileAudio} />
           </CardTitle>
           <CardSubtitle>

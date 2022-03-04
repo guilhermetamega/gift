@@ -29,7 +29,7 @@ export const ButtonWrapper = styled.button<WrapperProps>`
   font-family: "Poppins", sans-serif;
   font-size: 20px;
 
-  width: 180px;
+  width: 120px;
   height: 80px;
 
   margin-left: auto;

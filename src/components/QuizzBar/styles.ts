@@ -9,9 +9,9 @@ export const QuizzBackgroundWrapper = styled.div`
 `;
 
 export const ButtonGroupWrapper = styled.div`
+  width: 100%;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
-  grid-gap: 10px;
 `;
 
 export const QuizzTitleWrapper = styled.h2`

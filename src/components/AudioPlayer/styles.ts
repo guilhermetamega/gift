@@ -9,7 +9,7 @@ export const AudioContainerWrapper = styled.div`
   text-align: center;
 
   audio {
-    width: 300px;
+    width: 100%;
   }
   audio::-webkit-media-controls-enclosure {
     background-color: ${theme.colors.yellow};
