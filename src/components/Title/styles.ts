@@ -1,11 +1,12 @@
 import styled from "styled-components";
+import theme from "styles/theme";
 import { SectionWrapperProps } from ".";
 
 export type WrapperProps = Pick<SectionWrapperProps, "home" | "href">;
 
 export const TitleWrapper = styled.h1`
-  color: ${(props) => props.theme.colors.darkGray};
-  background-color: ${(props) => props.theme.colors.yellow};
+  color: ${theme.colors.darkGray};
+  background-color: ${theme.colors.yellow};
   font-weight: 200;
   font-size: 51px;
   text-align: center;
@@ -14,6 +15,8 @@ export const TitleWrapper = styled.h1`
   margin: 4px 30px;
   padding: 0px 10px;
   flex: 2;
+
+  min-width: 400px;
 `;
 export const SectionWrapper = styled.div<WrapperProps>`
   padding: 20px;
@@ -39,7 +42,7 @@ export const SectionWrapper = styled.div<WrapperProps>`
   }
 `;
 export const ImageWrapper = styled.img<WrapperProps>`
-  background-color: ${(props) => props.theme.colors.yellow};
+  background-color: ${theme.colors.yellow};
   border-radius: 3rem;
   margin-top: 6px;
   margin-left: 3px;

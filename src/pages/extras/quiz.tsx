@@ -8,7 +8,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 export default function Quiz() {
   return (
     <>
-      <PageTitle />
+      <PageTitle title="Quiz" />
       <Title src="/home.png" href="/">
         <FontAwesomeIcon icon={faQuestionCircle} />
       </Title>

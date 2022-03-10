@@ -6,6 +6,8 @@ import P from "../../components/Paragraph";
 import Image from "next/image";
 
 import * as S from "./styles";
+import { faStar } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 type ImageProps = {
   url: string;
@@ -29,9 +31,11 @@ const PageTemplate = ({ page }: PageTemplateProps) => {
   const body = page.body.html;
   return (
     <>
-      <PageTitle />
+      <PageTitle title={page.heading} />
       <Title src="/home.png" href="/">
-        ★{page.title}★
+        <FontAwesomeIcon icon={faStar} />
+        {page.title}
+        <FontAwesomeIcon icon={faStar} />
       </Title>
       <TextBox>
         <P>{page.heading}</P>

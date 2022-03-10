@@ -15,44 +15,44 @@ import {
 export default function HomeTemplate() {
   return (
     <>
-      <PageTitle />
+      <PageTitle title="Se passou 1 ano..." />
       <Title home>
         <FontAwesomeIcon icon={faStar} />
         Feliz 1 ano
         <FontAwesomeIcon icon={faStar} />
       </Title>
       <CardGroup>
-        <Card color="red" href="/teste">
+        <Card color="red" href="04-01-20">
           <CardTitle>04/01/20</CardTitle>
-          <CardSubtitle>Primeira vez que nos vimos</CardSubtitle>
+          <CardSubtitle>1ª vez que nos vimos</CardSubtitle>
         </Card>
-        <Card color="blue">
+        <Card color="blue" href="23-01-21">
           <CardTitle>23/01/21</CardTitle>
-          <CardSubtitle>Primeiro flerte</CardSubtitle>
+          <CardSubtitle>Flertamos a 1ª vez</CardSubtitle>
         </Card>
-        <Card color="yellow">
-          <CardTitle>28/01/21</CardTitle>
-          <CardSubtitle>Copo da Fênix Negra</CardSubtitle>
+        <Card color="yellow" href="29-01-21">
+          <CardTitle>29/01/21</CardTitle>
+          <CardSubtitle>Fênix Negra</CardSubtitle>
         </Card>
-        <Card color="green">
-          <CardTitle>04/01/21</CardTitle>
-          <CardSubtitle>Primeira vez que nos vimos</CardSubtitle>
+        <Card color="green" href="25-02-21">
+          <CardTitle>25/02/21</CardTitle>
+          <CardSubtitle>Primeiro encontro</CardSubtitle>
         </Card>
-        <Card color="red">
-          <CardTitle>04/01/20</CardTitle>
-          <CardSubtitle>Primeira vez que nos vimos</CardSubtitle>
+        <Card color="red" href="28-02-21">
+          <CardTitle>28/02/21</CardTitle>
+          <CardSubtitle>Dia do açaí</CardSubtitle>
         </Card>
-        <Card color="blue">
-          <CardTitle>23/01/21</CardTitle>
-          <CardSubtitle>Primeiro flerte</CardSubtitle>
+        <Card color="blue" href="05-03-21">
+          <CardTitle>05/03/21</CardTitle>
+          <CardSubtitle>Fomos na sua casa</CardSubtitle>
         </Card>
-        <Card color="yellow">
-          <CardTitle>28/01/21</CardTitle>
-          <CardSubtitle>Copo da Fênix Negra</CardSubtitle>
+        <Card color="yellow" href="12-03-21">
+          <CardTitle>12/03/21</CardTitle>
+          <CardSubtitle>Pedido de Namoro</CardSubtitle>
         </Card>
-        <Card color="green">
-          <CardTitle>04/01/21</CardTitle>
-          <CardSubtitle>Primeira vez que nos vimos</CardSubtitle>
+        <Card color="green" href="14-03-21">
+          <CardTitle>14/03/21</CardTitle>
+          <CardSubtitle>Sítio com nossos pais</CardSubtitle>
         </Card>
       </CardGroup>
 
