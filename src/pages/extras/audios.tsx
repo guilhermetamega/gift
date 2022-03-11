@@ -14,7 +14,7 @@ import { faFileAudio } from "@fortawesome/free-solid-svg-icons";
 export default function Audios() {
   return (
     <>
-      <PageTitle />
+      <PageTitle title="Audios" />
       <Title src="/home.png" href="/">
         <FontAwesomeIcon icon={faFileAudio} />
       </Title>

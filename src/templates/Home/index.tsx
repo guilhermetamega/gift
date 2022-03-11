@@ -21,6 +21,13 @@ export default function HomeTemplate() {
         Feliz 1 ano
         <FontAwesomeIcon icon={faStar} />
       </Title>
+
+      <CardGroup>
+        <Card color="yellow">
+          <CardTitle>12 dias</CardTitle>
+          <CardSubtitle>Um dia para cada mês de alegrias</CardSubtitle>
+        </Card>
+      </CardGroup>
       <CardGroup>
         <Card color="red" href="04-01-20">
           <CardTitle>04/01/20</CardTitle>
@@ -54,6 +61,39 @@ export default function HomeTemplate() {
           <CardTitle>14/03/21</CardTitle>
           <CardSubtitle>Sítio com nossos pais</CardSubtitle>
         </Card>
+        <Card color="red" href="12-06-21">
+          <CardTitle>12/06/21</CardTitle>
+          <CardSubtitle>1º dia dos namorados</CardSubtitle>
+        </Card>
+        <Card color="blue" href="21-09-21">
+          <CardTitle>21/09/21</CardTitle>
+          <CardSubtitle>1ª Viagem</CardSubtitle>
+        </Card>
+        <Card color="yellow" href="05-03-21">
+          <CardTitle>25/12/21</CardTitle>
+          <CardSubtitle>1º Natal</CardSubtitle>
+        </Card>
+        <Card color="green" href="01-01-22">
+          <CardTitle>01/01/22</CardTitle>
+          <CardSubtitle>Ano novo Juntos</CardSubtitle>
+        </Card>
+      </CardGroup>
+
+      <CardGroup>
+        <Card color="blue" href="1-ano">
+          <CardTitle>12/03/22</CardTitle>
+          <CardSubtitle>Hoje</CardSubtitle>
+        </Card>
+      </CardGroup>
+
+      <CardGroup>
+        <Card color="red">
+          <CardTitle>Em breve...</CardTitle>
+          <CardSubtitle>
+            Vou ir adicionando mais datas conforme for lembrando e surgindo
+            novas comemorações!
+          </CardSubtitle>
+        </Card>
       </CardGroup>
 
       <CardGroup>
@@ -71,7 +111,7 @@ export default function HomeTemplate() {
       <CardGroup>
         <Card color="blue" href="/extras/audios">
           <CardTitle>
-            <FontAwesomeIcon icon={faFileAudio} /> Áudios Perdidos{" "}
+            <FontAwesomeIcon icon={faFileAudio} /> Áudios Perdidos(WIP){" "}
             <FontAwesomeIcon icon={faFileAudio} />
           </CardTitle>
           <CardSubtitle>
